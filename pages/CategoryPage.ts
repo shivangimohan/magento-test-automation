@@ -66,7 +66,7 @@ export class CategoryPage extends BasePage {
   async addFirstProductToCart(): Promise<boolean> {
     try {
       const productCount = await this.getProductCount();
-      console.log(`📦 Products available: ${productCount}`);
+      console.log(`Products available: ${productCount}`);
       
       if (productCount > 0) {
         const firstProduct = this.page.locator(Selectors.product.item).first();

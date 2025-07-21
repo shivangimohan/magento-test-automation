@@ -15,7 +15,7 @@ test.describe('Magento E-commerce Shopping Scenarios', () => {
   });
 
   test('Men Jacket - XS Blue', async ({ page }) => {
-    console.log('🧥 Starting Men Jacket scenario...');
+    console.log('Starting Men Jacket scenario...');
     
     const categoryPage = new CategoryPage(page);
     const cartPage = new CartPage(page);
@@ -44,7 +44,7 @@ test.describe('Magento E-commerce Shopping Scenarios', () => {
     const shippingInfo = await cartPage.getShippingCost();
     console.log(`Shipping cost for Netherlands: ${shippingInfo.price}`);
   
-    console.log('✅ Men Jacket scenario completed with verifications');
+    console.log('Men Jacket scenario completed with verifications');
   });
 
   test('Women Tops - XS Blue', async ({ page }) => {
